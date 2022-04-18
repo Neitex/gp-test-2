@@ -1,0 +1,127 @@
+openapi: 3.1.0
+info:
+  version: 0.0.1
+  title: GP-Test
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /developer:
+    get:
+      summary: Get developer
+      tags: [ ]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples: { }
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: string
+                description: Description of error
+        '404':
+          description: User is not Found
+      description: Queries developer using query parameters
+      parameters:
+        - schema:
+            type: integer
+            minimum: 1
+          in: query
+          name: id
+          description: User ID
+        - schema:
+            type: string
+            format: email
+          in: query
+          name: email
+          description: Email
+    parameters: [ ]
+    put:
+      summary: Create developer
+      responses:
+        '200':
+          description: Developer is created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Developer was not found
+        '409':
+          description: Email is already assigned
+      description: Creates a developer
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: id
+          required: true
+          description: User ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+            examples:
+              example-1:
+                value:
+                  name: John Doe
+                  email: user@example.com
+    patch:
+      summary: Update developer
+      description: Updates developer profile
+      responses:
+        '200':
+          description: Developer is updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Developer was not found
+        '409':
+          description: Email is already assigned
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+            examples:
+              Example:
+                value:
+                  name: New Name
+                  email: uwu@example.com
+        description: Body containing changes. You cannot change user ID.
+    delete:
+      summary: Delete developer
+      responses:
+        '200':
+          description: OK
+      description: Deletes developer from database
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: id
+          required: true
+          description: Developer ID
+components:
+  schemas:
+    User:
+      title: Developer
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          example: John Doe
+        email:
+          type: string
+          format: email

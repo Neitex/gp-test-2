@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="16" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="193" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/build.gradle" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="214" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1813" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/pavel/gptest/classes/Developer.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="403" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/pavel/gptest/repositories/DevelopersRepository.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="3009" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/test/java/com/pavel/gptest/RESTControllerTest.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="2060" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/pavel/gptest/exceptions/DeveloperException.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="694" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/openapi.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="356" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitignore" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="429" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/pavel/gptest/classes/DeveloperSearchTerm.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="3682" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/src/main/java/com/pavel/gptest/GptestApplication.java" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>
